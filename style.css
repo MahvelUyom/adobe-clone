@@ -1,0 +1,566 @@
+*{
+  text-decoration: none;
+  list-style: none;
+  
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul{
+  float: right;
+  background: whitesmoke;
+  margin-right: 20px;
+  top:50px;
+ 
+}
+
+nav {
+  position:fixed;
+  opacity: 100%;
+  background: whitesmoke;
+  width: 100%;
+  top:0;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #000;
+  float: left;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+label.logo{
+  color: red;
+  font-size: 35px;
+  margin-left:-50px;
+  line-height: 80px;
+  letter-spacing: 1px;
+  padding: 0 100px;
+  font-weight: bold;
+  
+}
+
+
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+   
+   
+   
+  ul{
+    position: fixed;
+    width: 95%;
+    height: 100vh;
+    padding-left: 0;
+    overflow-y: scroll;
+    background: whitesmoke;
+    top: 55px;
+    left: -100%;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 10px 0;
+    line-height:30px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  }
+  
+  @media (min-width: 480px){
+    input{
+      
+    }
+    .contact .icons{
+      margin-left: 4rem;
+    }
+    .icon{
+      margin-left: 4rem;
+    }
+    .span{
+      text-align: center;
+      margin:0;
+    }
+    .span p{
+  margin: 2rem;
+}
+.copy{
+  
+  margin-left: 4rem;
+}
+
+  }
+  
+  
+  
+  
+  
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow-y: scroll;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border:none;
+  text-align: left;
+  outline: none;
+  
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  
+  overflow-y: scroll ;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2716"; /* Unicode character for "minus" sign (-) */
+  font-size:13px;
+}
+.section{
+  margin-top:25px;
+}
+
+.section p{
+  font-size: 13px;
+  padding:0px;
+  margin-top: 5px;
+}
+
+.section button{
+  font-size: 20px;
+  margin-left:0;
+  background: whitesmoke;
+  padding-left: 10px;
+  margin-top: 0;
+  width:100%;
+}
+input{
+  padding-left:10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 95%;
+  height:40px;
+  border:1px solid;
+  border-radius:5px;
+  margin-left: 13px;
+  font-weight: 300;
+}
+.right{
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+.right a{
+  color:#000;
+}
+.border{
+  border-bottom: 1px solid;
+  opacity:30%;
+}
+
+
+
+
+
+
+
+.pane {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordio {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border:none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordio:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.pane {
+  padding: 0 18px;
+  background-color: white;
+  
+  overflow: hidden;
+}
+.accordio:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2716"; /* Unicode character for "minus" sign (-) */
+  font-size:13px;
+}
+.nice-link{
+  margin-top:25px;
+}
+
+.nice-link p{
+  font-size: 18px;
+  padding:8px;
+  margin-top: 20px;
+}
+
+.nice-link button{
+  font-size: 20px;
+  margin-top:0px;
+}
+
+
+
+
+.main{
+  padding:0rem;
+padding-top: 3.5rem;
+}
+h1{
+  font-size: 58px;
+  font-family:arial;
+  font-weight: 800;
+}
+.adobe-img h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.img-flow .img-box{
+  display:flex;
+}
+.img-box{
+  overflow-x: scroll;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+.img-box p{
+  font-weight: 700;
+}
+.img-box img{
+
+  box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+
+.img1,.img2,.img3,.img4,.img5{
+    margin-right: 4rem;
+  margin-left: 2rem;
+}
+ .img1 img{
+  height:150px;
+  width:120px;
+  border-radius: 15px;
+    
+}
+.img2 img{
+  width:150px;
+  height:100px;
+  border-radius: 15px;
+  margin-top: 2.5rem;
+  
+}
+.img3 img{
+  height:150px;
+  width:120px;
+  border-radius: 15px;
+}
+.img4 img{
+  width:150px;
+  height:100px;
+  border-radius: 15px;
+  margin-top: 2.5rem;
+}
+.img5 img{
+    height:150px;
+  width:120px;
+  border-radius: 15px;
+}
+.get-adobe button{
+  height:45px;
+  width: 200px;
+  text-align: center;
+  background:darkblue;
+  font-weight: 500;
+  color:#fff;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+}
+.get-adobe p{
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.photoshop{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4FgW_Kn8WRmcR0Bjeli2fFSfVbFo_d5RJQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+  padding: 1rem;
+  
+  opacity:1;
+  margin-top: 3rem;
+}
+
+.photoshop p{
+  font-size: 20px;
+  line-height: 36px;
+}
+.photoshop a{
+  font-weight: bold;
+  color:#000;
+}
+.photography{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFMoMGo8ooWX0fZLxeNQPQ08eSxRYgoV7VTw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+  padding: 1rem;
+  opacity:1;
+  
+  margin-top: 3rem;
+}
+.photography p{
+  font-size: 20px;
+  line-height: 36px;
+  color: white;
+}
+.photography a{
+   font-weight: bold;
+  color:#fff;
+}
+.photography h2{
+  color:#fff;
+}
+.links{
+  display: block;
+  background: cornflowerblue;
+  height:400px;
+  padding: 1rem;
+  opacity:1;
+  margin-top: 3rem;
+}
+.links hr{
+  border:none;
+  border-bottom: 1px solid;
+}
+.links a{
+  font-weight: 500;
+  color:#000;
+padding-top: 3rem;
+}
+.editing{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfjsCocUezz9NXRuPf04W24I3-9aU9bzR95g&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+  padding: 1rem;
+  opacity:1;
+  
+  margin-top: 3rem;
+}
+.editing p{
+  font-size: 20px;
+  line-height: 36px;
+  color: #000;
+}
+.editing a{
+   font-weight: 500;
+  color:#000;
+}
+.acrobat {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-iCLffd10RtQdm04yUgDvS_jYdHA4fDOZw&usqp=CAU);
+  background-repeat: no-repeat;
+  height:500px;
+  background-size: cover;
+  padding: 1rem;
+  opacity:1;
+  
+  margin-top: 3rem;
+}
+.acrobat h2{
+  color: white;
+}
+.acrobat p{
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+}
+.acrobat a{
+  font-weight: 500;
+  color:#fff;
+}
+.null img{
+  height:400px;
+  margin-top: 3rem;
+  margin: 0;
+  width: 100%;
+}
+.null{
+  margin-top: 4rem;
+  width:100%;
+  margin:4rem 0;
+  display: none;
+}
+.to-do p{
+  font-size: 20px;
+  line-height: 36px;
+}
+.to-do h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+.to-do .see{
+  width:80px;
+  height:30px;
+  border-radius: 30px;
+  background: cornflowerblue;
+  color:white;
+  border:none;
+  font-weight:bold;
+}
+.to-do .see-all{
+  width:80px;
+  height:30px;
+  border-radius: 30px;
+  background: whitesmoke;
+  color:cornflowerblue;
+  border:none;
+  font-weight:bold;
+}
+.mob-app{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIN8BUWmOHzfWAU0_Bf9yLY49wlh0mT42q_g&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+  padding: 1rem;
+  color:white;
+  opacity:1;
+  margin-top: 3rem;
+}
+.mob-app p{
+  font-size: 20px;
+  line-height: 36px;
+  color:white;
+}
+.mob-app a{
+ font-weight: 500;
+  color:#000;
+}
+.cloud{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_2ZkuUPs-9uIrH-XXpr5XTr2O1gF1EOPyQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:400px;
+  padding: 1rem;
+  color:#fff;
+  opacity:1;
+  margin-top: 3rem;
+  
+}
+.cloud p{
+  font-size: 20px;
+  line-height: 36px;
+  color:black;
+  font-weight: bold;
+}
+.cloud a{
+  color:#fff;
+  font-weight: bold;
+}
+.contact{
+  display: flex;
+  margin-top:3rem;
+}
+.contact .icons{
+  display: flex;
+  
+  flex-direction: row;
+}
+.icons img{
+  width:30px;
+  height:30px;
+  border-radius: 15px;
+  margin-left: 2rem;
+}
+select{
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  width:150px;
+  padding:5px;
+}
+.copy{
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.span{
+  display: flex;
+  margin-left: 1rem;
+}
+.span p{
+  margin-left:1rem;
+}
